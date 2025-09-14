@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | Berkeley RDI</title>
+    <meta name="description" content="Research at the UC Berkeley Center for Responsible, Decentralized Intelligence">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="metaverse.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script async src=”https://siteimproveanalytics.com/js/siteanalyze_6294756.js”></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Research @ <img alt="Berkeley Logo" src="img/rdi-sm.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://rdi.berkeley.edu">RDI Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://rdi.berkeley.edu/research">Research Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="https://rdi.berkeley.edu/zkp">Zero Knowledge Proofs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Metaverse Research
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/metadata">MetaData</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/metaguard">MetaGuard</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/sok">Privacy SoK</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/identification">Identification</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/profiling">Profiling</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/boxrr-23">BOXRR Dataset</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/article">S&P Article</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/dmm">Motion Masking</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse">View All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                DeFi Research
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/defi-attacks">DeFi Attacks</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/blockchain-llm">Blockchain LLM</a>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/clue">Clue</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/defi">View All</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="bg-secondary py-5">
+      <div class="container">
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img"
+                style="min-height: 240px; background-image: url('img/data_rights.PNG')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4><em>The Gap Between Data Rights Ideals and Reality
+                  </em></h4>
+                <h6 class="text-secondary">2025 &nbsp;|&nbsp; Yujin Potter &middot; Ella Corren &middot; Gonzalo Munilla Garrido
+                  &middot; Chris Hoofnagle &middot; Dawn Song
+                </h6>
+                <p class="text-justify">As information economies burgeon, they unlock innovation and
+                  economic wealth while posing novel threats to civil liberties and
+                  altering power dynamics between individuals, companies, and governments.
+                  Legislatures have reacted with privacy laws designed to
+                  empower individuals over their data. These laws typically create
+                  rights for "data subjects" (individuals) to make requests of data
+                  collectors (companies and governments). The European Union General
+                  Data Protection Regulation (GDPR) exemplifies this, granting
+                  extensive data rights to data subjects, a model embraced globally.
+                  However, the question remains: do these rights-based privacy laws
+                  effectively empower individuals over their data? This paper scrutinizes
+                  these approaches by reviewing 201 interdisciplinary empirical
+                  studies, news articles, and blog posts.We pinpoint 15 key questions
+                  concerning the efficacy of rights allocations. The literature often
+                  presents conflicting results regarding the effectiveness of rightsbased
+                  frameworks, but it generally emphasizes their limitations.We
+                  offer recommendations to policymakers and Computer Science (CS)
+                  groups committed to these frameworks, and suggest alternative
+                  privacy regulation approaches.
+                </p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="uploads/data_rights.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4" style="padding-right: 10px;">
+              <div class="card-img"
+                style="min-height: 240px; background-image: url('img/silent-threshold-encryption-img.jpeg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4><em>Threshold Encryption with Silent Setup
+                  </em></h4>
+                <h6 class="text-secondary">2024 &nbsp;|&nbsp; Sanjam Garg &middot; Dimitris Kolonelos
+                  &middot; Guru-Vamsi Policharla &middot; Mingyuan Wang | CRYPTO 2024
+                </h6>
+                <p class="text-justify">We build a concretely efficient threshold encryption scheme where the joint public
+                  key of a set of parties is computed as a deterministic function of their locally computed public keys,
+                  enabling a silent setup phase. By eliminating interaction from the setup phase, our scheme immediately
+                  enjoys several highly desirable features such as asynchronous setup, multiverse support, and dynamic
+                  threshold. <br> <br>
+  
+                  Prior to our work, the only known constructions of threshold encryption with silent setup relied on
+                  heavy cryptographic machinery such as indistinguishability Obfuscation or witness encryption for all of
+                  NP. Our core technical innovation lies in building a special purpose witness encryption scheme for the
+                  statement ``at least t parties have signed a given message''. Our construction relies on pairings and is
+                  proved secure in the Generic Group Model.
+                </p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2024/263"
+                    target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/guruvamsi-policharla/silent-threshold-encryption" target="_blank"><i
+                      class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img"
+                style="min-height: 240px; background-image: url('img/batched-threshold-encryption-img.jpeg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4><em>Mempool Privacy via Batched Threshold Encryption: Attacks and Defenses
+                  </em></h4>
+                <h6 class="text-secondary">2024 &nbsp;|&nbsp; Arka Rai Choudhuri &middot; Sanjam Garg &middot; Julien Piet
+                  &middot; Guru-Vamsi Policharla | USENIX Security Symposium 2024
+                </h6>
+                <p class="text-justify">With the rising popularity of DeFi applications it is important to implement
+                  protections for regular users of these DeFi platforms against large parties with massive amounts of
+                  resources allowing them to engage in market manipulation strategies such as frontrunning/backrunning.
+                  Moreover, there are many situations (such as recovery of funds from vulnerable smart contracts) where a
+                  user may not want to reveal their transaction until it has been executed. As such, it is clear that
+                  preserving the privacy of transactions in the mempool is an important goal. <br><br>
+  
+                  In this work we focus on achieving mempool transaction privacy through a new primitive that we term
+                  batched-threshold encryption, which is a variant of threshold encryption with strict efficiency
+                  requirements to better model the needs of resource constrained environments such as blockchains. Unlike
+                  the naive use of threshold encryption, which requires communication proportional to to decrypt
+                  transactions with a committee of parties, our batched-threshold encryption scheme only needs
+                  communication. We additionally discuss pitfalls in prior approaches that use (vanilla) threshold
+                  encryption for mempool privacy.
+                </p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2024/669"
+                    target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/guruvamsi-policharla/batched-threshold-encryption" target="_blank"><i
+                      class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4" style="padding-right: 10px;">
+              <div class="card-img" style="min-height: 310px; background-image: url('img/opensource2.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4><em>"As an AI, I believe AI models should be open source"</em></h4>
+                <h6 class="text-secondary">2024 &nbsp;|&nbsp; Yujin Potter &middot; Michael Potter &middot; Dawn Song </h6>
+                <p class="text-justify">A significant rift has emerged within the machine learning research community, centered around a critical debate: should AI models be open-source or closed-source? This paper conveys the positions of AIs themselves, utilizing large language models to explore various arguments for and against each perspective. We analyze the stances of five cutting-edge LLMs: GPT-4, Claude-2.1, Gemini Pro, CodeLlama-34B Instruct, and Mixtral-8x7B-Instruct, both before and after they debate the issue amongst themselves. Their consensus is encapsulated in the following opinion statement from GPT-4: <em>"The benefits of open-source AI, in fostering a more transparent, collaborative, and innovative environment, outweigh the risks, and this model should be pursued while implementing robust mechanisms to mitigate potential misuse and ethical risks."</em>&hellip;</p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="uploads/LLM_open_vs_closed.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img" style="min-height: 310px; background-image: url('img/thumbnail.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Deep Motion Masking for Secure, Usable, and Scalable Real-Time Anonymization of Virtual Reality Motion Data</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Wenbo Guo &middot; James F. O’Brien &middot; Louis Rosenberg &middot; Dawn Song | arXiv.2311.05090</h6>
+                <p class="text-justify">Recent studies have demonstrated that the motion tracking "telemetry" data used by nearly all VR applications is as uniquely identifiable as a fingerprint scan. Although previous attempts have been made to anonymize VR motion data, we present in this paper a state-of-the-art VR identification model that can convincingly bypass known defensive countermeasures. We then propose a new "deep motion masking" approach that scalably facilitates the real-time anonymization of VR telemetry data&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse/dmm"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2311.05090" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metaguardplus" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/motion-study.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Truth in Motion: The Unprecedented Risks and Opportunities of Extended Reality Motion Data</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Louis Rosenberg &middot; James F. O’Brien &middot; Dawn Song  &nbsp;|&nbsp; doi.org/10.48550/arXiv.2306.06459</h6>
+                <p class="text-justify">Motion tracking "telemetry" data lies at the core of nearly all modern extended reality and metaverse experiences. While generally presumed innocuous, recent studies have demonstrated that motion data actually has the potential to profile and deanonymize XR users, posing a significant threat to security and privacy in the metaverse.</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse/article"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2306.06459" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img" style="min-height: 310px; background-image: url('img/thumb.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Inferring Private Personal Attributes of Virtual Reality Users from Head and Hand Motion Data</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Christian Rack &middot; Wenbo Guo &middot; Rui Wang &middot; Shuixian Li &middot; Brandon Huang &middot; Atticus Cull &middot; James F. O'Brien &middot; Marc Latoschik &middot; Louis Rosenberg &middot; Dawn Song | https://doi.org/10.48550/arXiv.2305.19198</h6>
+                <p class="text-justify">Motion tracking 'telemetry' data lies at the core of nearly all modern virtual reality (VR) and metaverse experiences. While generally presumed innocuous, recent studies have demonstrated that motion data actually has the potential to uniquely identify VR users. In this study, we go a step further, showing that a variety of private user information can be inferred just by analyzing motion data recorded from VR devices&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse/profiling"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2305.19198" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/MetaGuard/Profiling" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/ident.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Unique Identification of 50,000+ VR Users from Head & Hand Motion</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Wenbo Guo &middot; Justus Mattern &middot; Rui Wang &middot; James F. O’Brien &middot; Louis Rosenberg &middot; Dawn Song</h6>
+                <p class="text-justify">With the recent explosive growth of interest and investment in VR, public attention has rightly shifted toward the unique security and privacy threats that these platforms may pose. While it has long been known that people reveal information about themselves via their motion, the extent to which this makes an individual globally identifiable within virtual reality has not yet been widely understood. In this study, we show that a large number of real VR users can be uniquely identified across multiple sessions using just their head and hand motion&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/vr-identification"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2302.08927" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/MetaGuard/Identification" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last">
+              <div class="card-img" style="background-image: url('img/sok.svg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>SoK: Data Privacy in Virtual Reality</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Gonzalo Munilla Garrido &middot; Vivek Nair &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2301.05940</h6>
+                <p class="text-justify">The adoption of VR technologies has rapidly gained momentum in recent years as companies around the world begin to position the so-called "metaverse" as the next major medium for accessing and interacting with the internet. While consumers have become accustomed to a degree of data harvesting on the web, the real-time nature of data sharing in the metaverse indicates that privacy concerns are likely to be even more prevalent in the new "Web 3.0." Research into VR privacy has demonstrated that a plethora of sensitive personal information is observable by various would-be adversaries from just a few minutes of telemetry data. This paper aims to systematize knowledge on the landscape of VR privacy threats and countermeasures&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse-sok"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2301.05940" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/metadata-thumb.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>MetaData: Exploring the Privacy Risks of Adversarial VR Game Design</h4>
+                <h6 class="text-secondary">Vivek Nair &middot; Gonzalo Munilla Garrido &middot; Dawn Song &middot; James F. O'Brien &nbsp;|&nbsp; doi.org/10.48550/arXiv.2207.13176</h6>
+                <p class="text-justify">Fifty study participants playtested an innocent-looking "escape room" game in virtual reality (VR). Behind the scenes, an adversarial program had accurately inferred over 25 personal data attributes, from anthropometrics like height and wingspan to demographics like age and gender, within just a few minutes of gameplay. In this work, we illustrate how VR attackers can covertly ascertain dozens of personal data attributes from seemingly-anonymous users of popular metaverse applications&hellip;</p>
+                <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metadata"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://petsymposium.org/popets/2023/popets-2023-0108.php" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metadata" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img" style="background-image: url('img/metaguard.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>MetaGuard: Going Incognito in the Metaverse</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Vivek Nair &middot; Gonzalo Munilla Garrido &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2208.05604</h6>
+                <span class="badge bg-warning text-dark mb-2"><i class="fa fa-trophy"></i>&nbsp; UIST '23 Best Paper Award</span>
+                <p class="text-justify">We present the first known method of implementing an "incognito mode" for VR. Our technique leverages local ε-differential privacy to quantifiably obscure sensitive user data attributes, with a focus on intelligently adding noise when and where it is needed most to maximize privacy while minimizing usability impact&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaguard"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2208.05604" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metaguard" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="card-img" style="background-image: url('img/epg-traversal.png'); background-size: contain">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>Towards Automated Security Analysis of Smart Contracts based on Execution Property Graph</h4>
+                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Kaihua Qin* &middot; Zhe Ye* &middot; Zhun Wang &middot; Weilin Li &middot; Liyi Zhou &middot; Chao Zhang &middot; Dawn Song &middot; Arthur Gervais &nbsp;|&nbsp; https://arxiv.org/pdf/2305.14046.pdf</h6>
+                  <p class="text-justify">Identifying and mitigating vulnerabilities in smart contracts is crucial, especially considering the rapid growth and increasing complexity of DeFi platforms. To address the challenges associated with securing these contracts, we introduce a versatile dynamic analysis framework specifically designed for the EVM. This comprehensive framework focuses on tracking contract executions, capturing valuable runtime information, while introducing and employing the EPG to propose a unique graph traversal technique that swiftly detects potential smart contract attacks. Our approach showcases its efficacy with rapid average graph traversal time per transaction and high true positive rates. The successful identification of a zero-day vulnerability affecting Uniswap highlights the framework's potential to effectively uncover smart contract vulnerabilities in complex DeFi systems&hellip;</p>
+                  <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/clue"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2305.14046.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4 order-lg-last">
+                <div class="card-img" style="background-image: url('img/dao.png'); background-size: contain">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4> Unpacking How Decentralized Autonomous Organizations (DAOs) Work in Practice </h4>
+                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Tanusree Sharma &middot; Yujin Kwon &middot; Kornrapat Pongmala &middot; Henry Wang &middot; Andrew Miller &middot; Dawn Song &middot; Yang Wang &nbsp;|&nbsp; https://arxiv.org/pdf/2304.09822.pdf</h6>
+                  <p class="text-justify">Decentralized Autonomous Organizations (DAOs) have emerged as a novel way to coordinate a group of (pseudonymous) entities towards a shared vision (e.g., promoting sustainability), utilizing self-executing smart contracts on blockchains to support decentralized governance and decision-making. In just a few years, over 4,000 DAOs have been launched in various domains, such as investment, education, health, and research. Despite such rapid growth and diversity, it is unclear how these DAOs actually work in practice and to what extent they are effective in achieving their goals. Given this, we aim to unpack how (well) DAOs work in practice. We conducted an in-depth analysis of a diverse set of 10 DAOs of various categories and smart contracts, leveraging on-chain (e.g., voting results) and off-chain data (e.g., community discussions) as well as our interviews with DAO organizers/members. Specifically, we defined metrics to characterize key aspects of DAOs, such as the degrees of decentralization and autonomy. We observed CompoundDAO, AssangeDAO, Bankless, and Krausehouse having poor decentralization in voting, while decentralization has improved over time for one-person-one-vote DAOs (e.g., Proof of Humanity). Moreover, the degree of autonomy varies among DAOs, with some (e.g., Compound and Krausehouse) relying more on third parties than others. Lastly, we offer a set of design implications for future DAO systems based on our findings. &hellip;</p>
+                  <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2304.09822.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="card-img" style="background-image: url('img/pianist-prot.png'); background-size: contain">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>Pianist: Scalable zkRollups via Fully Distributed Zero-Knowledge Proofs</h4>
+                  <h6 class="text-secondary">2024 &nbsp;|&nbsp; Tianyi Liu &middot; Tiancheng Xie &middot; Jiaheng Zhang
+                    &middot; Dawn Song &middot; Yupeng Zhang
+                    &nbsp;|&nbsp; S&P 2024</h6>
+                  <p class="text-justify">
+                    In this work, we improve the scalability of these techniques by proposing new schemes of fully
+                    distributed ZKPs. Our schemes can improve the efficiency and the scalability of ZKPs using multiple
+                    machines, while the communication among the machines is minimal. With our schemes, the ZKP generation
+                    can be distributed to multiple participants in a model similar to the mining pools. Our protocols are
+                    based on Plonk, an efficient zero-knowledge proof system with a universal trusted setup. The first
+                    protocol is for data-parallel circuits.
+                    For computation of \(M\) sub-circuits of size \(T\) each, using \(M\) machines, the prover time is
+                    \(O(T\log
+                    T
+                    + M \log M)\), while the prover time of the original Plonk on a single machine is \(O(MT\log (MT))\).
+                    Our
+                    protocol incurs only \(O(1)\) communication per machine, and the proof size and verifier time are both
+                    \(O(1)\), the same as the original Plonk. Moreover, we show that with minor modifications, our second
+                    protocol can support general circuits with arbitrary connections while preserving the same proving,
+                    verifying, and communication complexity. The technique is general and may be of independent interest for
+                    other applications of ZKP.
+                  </p>
+                  <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/zkp/Pianist/pianist.html"><i
+                        class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a
+                      class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2023/1271"><i class="fa fa-file-lines"></i>&nbsp; Read
+                      Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/dreamATD/pianist-gnark"
+                      target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4 order-lg-last">
+                <div class="card-img" style="background-image: url('img/blockGPT.png'); background-size: contain">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>Blockchain Large Language Models</h4>
+                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Yu Gai* &middot; Liyi Zhou* &middot; Kaihua Qin &middot; Dawn Song &middot; Arthur Gervais &nbsp;|&nbsp; https://arxiv.org/pdf/2304.12749.pdf</h6>
+                  <p class="text-justify">This paper presents a dynamic, real-time approach to detecting anomalous blockchain transactions. The proposed tool, BlockGPT, generates tracing representations of blockchain activity and trains from scratch a large language model to act as a real-time Intrusion Detection System. Unlike traditional methods, BlockGPT is designed to offer an unrestricted search space and does not rely on predefined rules or patterns, enabling it to detect a broader range of anomalies.&hellip;</p>
+                  <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/blockchain-llm"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2304.12749.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/specular.png'); background-size: contain">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Specular: Towards Trust-minimized Blockchain Scalability with EVM-native Fraud Proofs</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Zhe Ye &middot; Ujval Misra &middot; Dawn Song &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2212.05219">https://arxiv.org/abs/2212.05219</a> &nbsp;|&nbsp; <a href="https://twitter.com/SpecularL2">Twitter: @SpecularL2</a></h6>
+                <p class="text-justify">In this work, we aim to build a secure, trust-minimized optimistic rollup that achieves: (1) a minimal trusted computing base, improving security, auditability and upgradeability; (2) support for permissionless, trust-minimized participation of multiple Ethereum clients, enabling client diversity; and (3) efficient dispute resolution. To do so, we design an IFP system <i>native</i> to the EVM, that enforces Ethereum's specified semantics precisely at the level of a single EVM instruction. We present an implementation of this approach in <i>Specular</i>, an ORU which leverages an off-the-shelf Ethereum client&mdash;modified minimally to support one-step proof generation.
+</p>
+<p class="mb-0">
+  <a class="btn btn-primary btn-sm" href="https://specular.network"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2212.05219"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;</p>
+</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last">
+              <div class="card-img" style="background-image: url('img/zkbridge.jpg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>zkBridge: Trustless Cross-chain Bridges Made Practical</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Tiancheng Xie &middot; Jiaheng Zhang &middot; Zerui Cheng &middot; Fan Zhang &middot; Yupeng Zhang &middot; Yongzheng Jia &middot; Dan Boneh &middot; Dawn Song &nbsp;|&nbsp; <a href="https://arxiv.org/pdf/2210.00264.pdf">https://arxiv.org/pdf/2210.00264.pdf</a> &nbsp;|&nbsp; ACM CCS 2022 &nbsp;|&nbsp; <a href="https://twitter.com/zkcollective">Twitter: @zkcollective</a></h6>
+                <p class="text-justify">We present zkBridge, the first  trustless, permissionless, extensible, universal, and efficient cross-chain bridge. With succinct proofs, zkBridge not only guarantees strong security without external assumptions, but also significantly reduces on-chain verification cost. We propose novel succinct proof protocols that are orders-of-magnitude faster than existing solutions for workload in zkBridge. With a modular design, zkBridge enables a broad spectrum of applications, including message passing, token transferring, and other computational logic operating on state changes from different chains. We have already implemented zkBridge between certain chains and evaluated its end-to-end performance. We encourage community members to join us to extend zkBridge to other chains; <a href="https://forms.gle/WBx25gBoMZjXsMTJ8">please fill in the form</a> if you are interested in contributing to this project towards building a universal, secure foundation for multi-chain interoperability...
+</p>
+<p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/zkp/zkBridge/zkBridge.html"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href=uploads/paper.pdf><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;</p>
+</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/zebra.png'); background-size: contain">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>ZEBRA: Anonymous Credentials with Practical On-chain Verification and Applications to KYC in DeFi</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Deevashwer Rathee &middot; Guru Vamsi Policharla &middot; Tiancheng Xie &middot; Ryan Cottone &middot; Dawn Song &nbsp;|&nbsp; <a href="https://eprint.iacr.org/2022/1286.pdf">https://eprint.iacr.org/2022/1286.pdf</a> </h6>
+                <p class="text-justify">ZEBRA is an Anonymous Credential (AC) scheme, supporting auditability and revocation, that provides practical on-chain verification for the first time. It realizes efficient access control on permissionless blockchains while achieving both privacy and accountability. In all prior solutions, users either pay exorbitant fees or lose privacy since authorities granting access can map users to their wallets. Hence, ZEBRA is the first to enable DeFi platforms to remain compliant with imminent regulations without compromising user privacy.<br>
+When compared to the state-of-the-art AC scheme for blockchains, ZEBRA reduces the gas cost incurred on the Ethereum Virtual Machine (EVM) by 11.8x. This translates to a reduction in transaction fees from 94 USD to 8 USD on Ethereum in August 2022. ZEBRA further drives down credential verification costs through batched verification and achieves a transaction fee of just 0.0126 USD for a batch of 512 wallets.
+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last">
+              <div class="card-img" style="background-image: url('img/zkp.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Orion: Zero Knowledge Proof with Linear Prover Time</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Tiancheng Xie &middot; Yupeng Zhang &middot; Dawn Song &nbsp;|&nbsp; <a href="https://eprint.iacr.org/2022/1010"> Link to Paper </a> &nbsp;|&nbsp; published in CRYPTO 2022</h6>
+                <p class="text-justify">Zero-knowledge proof is a powerful cryptographic primitive that has found various applications in the real world. However, existing schemes with succinct proof size suffer from a high overhead on the proof generation time that is super-linear in the size of the statement represented as an arithmetic circuit, limiting their efficiency and scalability in practice. In this paper, we present Orion, a new zero-knowledge argument system that achieves \(O(N)\) prover time of field operations and hash functions and \(O(\log^2 N)\) proof size. </p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2022/1010" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/sunblaze-ucb/Orion" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/mfkdf-t.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Multi-Factor Key Derivation Function (MFKDF)</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Vivek Nair &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2208.05586</h6>
+                <p class="text-justify">Our Multi-Factor Key Derivation Function (MFKDF) expands upon password-based key derivation functions (PBKDFs) with support for using other popular authentication factors like TOTP, HOTP, and hardware tokens in the key derivation process. In doing so, it provides an exponential security improvement over PBKDFs with less than 12 ms of additional computational overhead. The result is a paradigm shift toward direct cryptographic protection of user data using all available authentication factors, without changeing the user experience&hellip;</p>
+                <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://mfkdf.com"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2208.05586" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/multifactor/mfkdf" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last">
+              <div class="card-img" style="background-image: url('img/ratchet.jpg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>A More Complete Analysis of the Signal Double Ratchet Algorithm</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Alexander Bienstock &middot; Jaiden Fairoze &middot; Sanjam Garg &middot; Pratyay Mukherjee &middot; Srinivasan Raghuraman</h6>
+                <p class="text-justify">We develop new formal definitions in the Universal Composability framework for the Signal Double Ratchet (DR) protocol. Our definitions (a) capture the security and correctness guarantees of prior work, and (b) capture more guarantees that are absent from one or all prior works. We also present an enhancement of the DR, denoted the Triple Ratchet (TR), that meets a stronger security definition and also applies to other protocols&hellip;</p>
+                <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=fJMgshvz7xw"><i class="fa-solid fa-video"></i>&nbsp; Watch Presentation</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2022/355" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/monthly_damage.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Systematization of Knowledge (SoK): DeFi Incidents</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Liyi Zhou &middot; Xihan Xiong &middot; Jens Ernstberger &middot; Stefanos Chaliasos &middot; Zhipeng Wang &middot; Ye Wang &middot; Kaihua Qin &middot; Roger Wattenhofer &middot; Dawn Song &middot; Arthur Gervais </h6>
+                <p class="text-justify">In this paper, we introduce a common reference frame to systematically evaluate and compare DeFi incidents. We investigate 77 academic papers, 30 audit reports, and 181 real-world incidents. Our open data reveals several gaps between academia and the practitioners' community. For example, few academic papers address "price oracle attacks" and "permissonless interactions", while our data suggests that they are the two most frequent incident types (15% and 10.5% correspondingly). We also investigate potential defenses&hellip;</p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2208.13035.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>ItyFuzz: Snapshot-Based Fuzzer for Smart Contract</h4>
+                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Chaofan Shou &middot; Shangyin Tan &middot; Koushik Sen |&nbsp; https://arxiv.org/pdf/2306.17135.pdf</h6>
+                  <p class="text-justify">We introduce a novel snapshot-based fuzzer ItyFuzz for testing smart contracts. In ItyFuzz, instead of storing sequences of transactions and mutating from them, we snapshot states and singleton transactions. To explore interesting states, ItyFuzz introduces a dataflow waypoint mechanism to identify states with more potential momentum. ItyFuzz also incorporates comparison waypoints to prune the space of states. Because ItyFuzz has second-level response time to test a smart contract, it can be used for on-chain testing, which has many benefits compared to local development testing. ItyFuzz has been evaluated on real and hacked DeFi projects and shown to surpass existing fuzzers.&hellip;</p>
+                  <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2306.17135.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/fuzzland/ityfuzz" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-img" style="background-image: url('img/ityfuzz.png'); background-size: contain">
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="bg-dark text-white text-center py-2">
+      <div class="container">
+        <p class="m-0">Copyright &copy; 2025 UC Regents; all rights reserved</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -318,6 +318,13 @@
     .accordion-content.active { display: block; }
     .arrow { transition: transform 0.3s; }
     .arrow.active { transform: rotate(180deg); }
+
+    /* === Pagination (add) === */
+    .pagination{display:flex;gap:.5rem;justify-content:center;margin:2rem 0;flex-wrap:wrap}
+    .pagination button{padding:.5rem .75rem;border:1px solid #e5e7eb;border-radius:6px;background:#fff;cursor:pointer}
+    .pagination button.active{background:var(--primary-blue);color:#fff;border-color:var(--primary-blue)}
+    .pagination button[disabled]{opacity:.5;cursor:not-allowed}
+
   </style>
 </head>
 <body class="text-gray-800">
@@ -377,7 +384,7 @@
       <p>Pioneering the next generation of AI and Agentic AI</p>
     </div>
 
-    <div class="research-grid">
+    <div class="research-grid" id="research-grid">
       <!-- 1. Agentic AI Foundation -->
       <div class="research-card">
         <h3>Agentic AI Foundation</h3>
@@ -443,6 +450,8 @@
         </ul>
       </div>
     </div>
+
+    <div id="pagination" class="pagination"></div>
   </div>
 
   <!-- test -->
@@ -526,6 +535,53 @@
 
 
   <!-- ====== Scripts (kept + mobile menu) ====== -->
+  <!-- 4) Add this JS (either in your existing <script> before </script>, or as a new <script> after it) -->
+  <script>
+  (function(){
+    const grid = document.getElementById('research-grid');
+    if (!grid) return;
+    const items = Array.from(grid.querySelectorAll('.research-card'));
+    const perPage = 30;
+    let page = 1;
+    const pagEl = document.getElementById('pagination');
+  
+    function render() {
+      const totalPages = Math.max(1, Math.ceil(items.length / perPage));
+      page = Math.min(Math.max(1, page), totalPages);
+  
+      const start = (page - 1) * perPage;
+      const end = start + perPage;
+      items.forEach((el, i) => { el.style.display = (i >= start && i < end) ? '' : 'none'; });
+  
+      if (!pagEl) return;
+      pagEl.innerHTML = '';
+  
+      const mkBtn = (label, disabled, gotoPage, active=false) => {
+        const b = document.createElement('button');
+        b.textContent = label;
+        if (disabled) b.disabled = true;
+        if (active) b.classList.add('active');
+        if (!disabled && !active) {
+          b.addEventListener('click', () => {
+            page = gotoPage;
+            render();
+            window.scrollTo({ top: grid.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+          });
+        }
+        return b;
+      };
+  
+      pagEl.appendChild(mkBtn('Prev', page === 1, page - 1));
+      for (let p = 1; p <= totalPages; p++) {
+        pagEl.appendChild(mkBtn(String(p), false, p, p === page));
+      }
+      pagEl.appendChild(mkBtn('Next', page === totalPages, page + 1));
+    }
+  
+    render();
+  })();
+  </script>
+
   <script>
     // Accordion functionality
     function toggleAccordion(header) {
